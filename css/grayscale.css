@@ -37,7 +37,14 @@
   background-color: transparent;
 }
 
+#mainNav img {
+    height: 2em;
+}
+
 @media (min-width: 992px) {
+  #mainNav img {
+    height:3.6em;
+  }
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -83,6 +90,13 @@
     color: #64a19d;
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
+  }
+  #mainNav img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  #mainNav.navbar-shrink img {
+    opacity: 1;
   }
 }
 
